@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Uni — Polo Universitario | Orientamento Pegaso, Mercatorum, San Raffaele</title>
+  <meta name="description" content="Nova Uni è il polo di orientamento universitario gratuito per le università telematiche del gruppo Multiversity: Pegaso, Mercatorum, San Raffaele. Trova il corso di laurea adatto a te.">
+  <meta name="keywords" content="orientamento universitario, università telematica, Pegaso, Mercatorum, San Raffaele, laurea online, Multiversity, Nova Uni">
+  <meta name="author" content="Nova Uni">
+
+  <meta property="og:title" content="Nova Uni — Polo Universitario">
+  <meta property="og:description" content="Orientamento universitario gratuito per le università telematiche Pegaso, Mercatorum e San Raffaele.">
+  <meta property="og:image" content="https://novauni.it/assets/logo-novauni.jpg">
+  <meta property="og:url" content="https://novauni.it/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nova Uni — Polo Universitario">
+  <meta name="twitter:description" content="Orientamento universitario gratuito per le università telematiche del gruppo Multiversity.">
+  <meta name="twitter:image" content="https://novauni.it/assets/logo-novauni.jpg">
+
+  <link rel="canonical" href="https://novauni.it/">
+  <link rel="icon" type="image/jpeg" href="assets/logo-novauni.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics 4 — Consent Mode v2 (default: tutto negato finché l'utente non accetta i cookie) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYQ7B6HPRJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-ZYQ7B6HPRJ', { anonymize_ip: true });
+  </script>
+</head>
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Navigazione principale">
+  <div class="navbar__inner">
+    <a href="#" class="navbar__brand" aria-label="Nova Uni Home">
+      <img src="assets/logo-novauni.jpg" alt="" class="navbar__logo">
+      <div class="navbar__brand-text">
+        <span class="navbar__title">NOVA UNI</span>
+        <span class="navbar__subtitle">POLO UNIVERSITARIO</span>
+      </div>
+    </a>
+
+    <button class="navbar__toggle" id="navbarToggle" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="navbar__menu" id="navbarMenu">
+      <a href="index.html#atenei" class="navbar__link">Atenei</a>
+
+      <div class="navbar__dropdown" id="navbarDropdown">
+        <button class="navbar__link navbar__dropdown-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+          Corsi di laurea
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="navbar__dropdown-panel" role="menu">
+          <div class="navbar__dropdown-cols">
+            <div class="navbar__dropdown-col">
+              <div class="navbar__dropdown-title">Per Ateneo</div>
+              <a href="corsi.html?ateneo=pegaso" role="menuitem">Università Pegaso</a>
+              <a href="corsi.html?ateneo=mercatorum" role="menuitem">Università Mercatorum</a>
+              <a href="corsi.html?ateneo=sanraffaele" role="menuitem">Università San Raffaele</a>
+            </div>
+            <div class="navbar__dropdown-col">
+              <div class="navbar__dropdown-title">Per Livello</div>
+              <a href="corsi.html?livello=triennale" role="menuitem">Lauree Triennali</a>
+              <a href="corsi.html?livello=magistrale" role="menuitem">Lauree Magistrali</a>
+            </div>
+          </div>
+          <a href="corsi.html" class="navbar__dropdown-all" role="menuitem">Vedi tutti i corsi →</a>
+        </div>
+      </div>
+
+      <a href="certificazioni.html" class="navbar__link">Certificazioni</a>
+      <a href="index.html#come-funziona" class="navbar__link">Orientamento</a>
+      <a href="index.html#contatti" class="navbar__link">Contatti</a>
+      <a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener" class="btn btn--gold btn--sm">Consulenza gratuita</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="hero__bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <circle cx="1100" cy="450" r="520" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="1100" cy="450" r="380" fill="none" stroke="white" stroke-width="1"/>
+    <circle cx="1100" cy="450" r="240" fill="none" stroke="white" stroke-width="1"/>
+    <line x1="1100" y1="0" x2="1100" y2="900" stroke="white" stroke-width="0.5"/>
+    <line x1="580" y1="450" x2="1620" y2="450" stroke="white" stroke-width="0.5"/>
+    <line x1="733" y1="83" x2="1467" y2="817" stroke="white" stroke-width="0.5"/>
+    <line x1="733" y1="817" x2="1467" y2="83" stroke="white" stroke-width="0.5"/>
+  </svg>
+
+  <img src="assets/logo-novauni.jpg" alt="" class="hero__watermark" aria-hidden="true">
+
+  <div class="hero__container">
+    <div class="hero__left">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        <span>Orientamento Universitario Gratuito</span>
+      </div>
+
+      <h1 class="hero__title">
+        La laurea che vuoi,<br>
+        <em>compatibile con<br>la tua vita.</em>
+      </h1>
+
+      <p class="hero__description">
+        Nova Uni è il tuo polo di orientamento: ti guida gratuitamente nella scelta del percorso giusto tra le migliori università telematiche italiane, in base al tuo profilo e ai tuoi obiettivi.
+      </p>
+
+      <div class="hero__partners">
+        <div class="hero__partners-label">Atenei e partner convenzionati</div>
+        <div class="hero__partners-list">
+          <div class="hero__partner-card"><img src="assets/pegaso.jpg" alt="Università Pegaso" style="height:30px"></div>
+          <div class="hero__partner-card"><img src="assets/mercatorum.png" alt="Università Mercatorum" style="height:26px"></div>
+          <div class="hero__partner-card"><img src="assets/sanraffaele.png" alt="Università San Raffaele" style="height:28px"></div>
+          <div class="hero__partner-card"><img src="assets/eipass.jpg" alt="EIPASS" style="height:24px"></div>
+        </div>
+      </div>
+
+      <div class="hero__cta-row">
+        <a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener" class="btn btn--gold btn--lg">
+          Prenota consulenza gratuita
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#come-funziona" class="btn btn--outline btn--lg">Come funziona</a>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat stat--featured">
+        <div class="stat__num">3</div>
+        <div class="stat__label">Atenei convenzionati</div>
+        <div class="stat__sub">tutti riconosciuti MUR</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">100%</div>
+        <div class="stat__label">Gratuito</div>
+        <div class="stat__sub">nessun costo di orientamento</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">+200</div>
+        <div class="stat__label">Corsi di laurea</div>
+        <div class="stat__sub">triennali e magistrali</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">48h</div>
+        <div class="stat__label">Risposta garantita</div>
+        <div class="stat__sub">dal primo contatto</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__fade"></div>
+</header>
+
+<section class="atenei" id="atenei">
+  <div class="container">
+    <div class="section__head">
+      <div class="section__eyebrow">I NOSTRI ATENEI</div>
+      <h2 class="section__title">Tre università eccellenti.<br><em>Un unico punto di riferimento.</em></h2>
+    </div>
+    <div class="atenei__grid">
+      <article class="ateneo-card">
+        <div class="ateneo-card__bar" style="background:#c0143c"></div>
+        <div class="ateneo-card__body">
+          <div class="ateneo-card__logo"><img src="assets/pegaso.jpg" alt="Logo Università Pegaso"></div>
+          <span class="ateneo-card__tag">La più grande d'Italia</span>
+          <h3 class="ateneo-card__name">Università Telematica Pegaso</h3>
+          <p class="ateneo-card__desc">Con oltre 100.000 studenti iscritti, Pegaso è l'ateneo telematico leader in Italia. Offre un'ampia gamma di corsi di laurea in Giurisprudenza, Scienze Motorie, Psicologia, Ingegneria, Economia, Lettere e molti altri ambiti, supportati da una piattaforma didattica all'avanguardia</p>
+        </div>
+      </article>
+
+      <article class="ateneo-card">
+        <div class="ateneo-card__bar" style="background:#1d3461"></div>
+        <div class="ateneo-card__body">
+          <div class="ateneo-card__logo"><img src="assets/mercatorum.png" alt="Logo Università Mercatorum"></div>
+          <span class="ateneo-card__tag">Economia e management</span>
+          <h3 class="ateneo-card__name">Università Mercatorum</h3>
+          <p class="ateneo-card__desc">L'ateneo delle Camere di Commercio italiane, specializzato in Economia, Giurisprudenza, Scienze Politiche e Ingegneria gestionale. Il punto di riferimento per chi vuole costruire una carriera nel business, nelle professioni e nel mondo dell'impresa.</p>
+        </div>
+      </article>
+
+      <article class="ateneo-card">
+        <div class="ateneo-card__bar" style="background:#2a5298"></div>
+        <div class="ateneo-card__body">
+          <div class="ateneo-card__logo"><img src="assets/sanraffaele.png" alt="Logo Università San Raffaele"></div>
+          <span class="ateneo-card__tag">Tradizione e innovazione</span>
+          <h3 class="ateneo-card__name">Università San Raffaele Roma</h3>
+          <p class="ateneo-card__desc">Ateneo telematico con una forte vocazione scientifica e tecnologica. Offre percorsi in Ingegneria, Scienze Biologiche, Scienze Motorie, con una metodologia didattica che integra rigore accademico e innovazione tecnologica.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="come-funziona">
+  <div class="container">
+    <div class="how__grid">
+      <div class="how__intro">
+        <div class="section__eyebrow">COME FUNZIONA</div>
+        <h2 class="section__title">Tre passi.<br><em>Zero burocrazia.</em></h2>
+        <p class="how__lead">Il nostro processo di orientamento è semplice e senza impegno. Non ti chiediamo nulla — solo il desiderio di cambiare il tuo futuro.</p>
+        <a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener" class="btn btn--navy">Inizia ora →</a>
+      </div>
+
+      <div class="how__steps">
+        <div class="how__step">
+          <div class="how__step-num">01</div>
+          <div class="how__step-body">
+            <h3 class="how__step-title">Parla con un orientatore</h3>
+            <p class="how__step-desc">Prenota una consulenza gratuita — online o in presenza. Il nostro team ti ascolta, capisce la tua situazione lavorativa, il tuo background e i tuoi obiettivi.</p>
+          </div>
+        </div>
+        <div class="how__step">
+          <div class="how__step-num">02</div>
+          <div class="how__step-body">
+            <h3 class="how__step-title">Ricevi il tuo percorso personalizzato</h3>
+            <p class="how__step-desc">Ti proponiamo il corso più adatto tra quelli disponibili nei nostri atenei: confronto piani di studio, costi, agevolazioni e opportunità di carriera.</p>
+          </div>
+        </div>
+        <div class="how__step">
+          <div class="how__step-num">03</div>
+          <div class="how__step-body">
+            <h3 class="how__step-title">Parti con un tutor dedicato</h3>
+            <p class="how__step-desc">Una volta iscritto, non sei solo. Un tutor Nova Uni ti segue per tutta la durata del percorso: iscrizioni, esami, scadenze, procedure burocratiche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <div class="section__eyebrow">DICONO DI NOI</div>
+      <h2 class="section__title section__title--light">Chi ha già scelto<br><em>Nova Uni.</em></h2>
+    </div>
+
+    <div class="testimonial" id="testimonial">
+      <div class="testimonial__quote">"</div>
+      <p class="testimonial__text" id="testiText">Polo professionale, mi sono iscritto con una facilità unica, sempre disponibili per chiarimenti e suggerimenti. Grazie a loro sono riuscito ad esonerare degli esami. Corsi validissimi. Consigliatissimo</p>
+      <div class="testimonial__footer">
+        <div>
+          <div class="testimonial__author" id="testiAuthor">Ignazio M.</div>
+          <div class="testimonial__role" id="testiRole">Lavoratore, iscritto a Pegaso</div>
+        </div>
+        <div class="testimonial__dots" id="testiDots">
+          <button class="testimonial__dot testimonial__dot--active" data-idx="0" aria-label="Testimonianza 1"></button>
+          <button class="testimonial__dot" data-idx="1" aria-label="Testimonianza 2"></button>
+          <button class="testimonial__dot" data-idx="2" aria-label="Testimonianza 3"></button>
+          <button class="testimonial__dot" data-idx="3" aria-label="Testimonianza 4"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <div class="partners__label">PARTNER E CERTIFICAZIONI</div>
+    <div class="partners__list">
+      <div class="partners__item"><img src="assets/pegaso.jpg" alt="Università Pegaso" style="height:44px"></div>
+      <div class="partners__item"><img src="assets/mercatorum.png" alt="Università Mercatorum" style="height:40px"></div>
+      <div class="partners__item"><img src="assets/sanraffaele.png" alt="Università San Raffaele" style="height:44px"></div>
+      <div class="partners__item"><img src="assets/eipass.jpg" alt="EIPASS" style="height:48px"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__info">
+        <div class="section__eyebrow">CONTATTI</div>
+        <h2 class="section__title">Inizia il tuo<br><em>percorso oggi.</em></h2>
+        <p class="contact__lead">Compila il form e un orientatore ti ricontatterà entro 48 ore. La consulenza è completamente gratuita e senza impegno.</p>
+
+        <div class="contact__items">
+          <div class="contact__item">
+            <div class="contact__icon">📍</div>
+            <div>
+              <div class="contact__item-label">Sede principale</div>
+              <div class="contact__item-val">Milano — disponibile anche online</div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">📞</div>
+            <div>
+              <div class="contact__item-label">Telefono</div>
+              <div class="contact__item-val">+39 379 333 2878</div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">✉️</div>
+            <div>
+              <div class="contact__item-label">Email</div>
+              <div class="contact__item-val"><a href="mailto:info@novauni.it">info@novauni.it</a></div>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">📅</div>
+            <div>
+              <div class="contact__item-label">Prenota direttamente</div>
+              <div class="contact__item-val"><a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener">Scegli uno slot in calendario</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap">
+        <form id="contactForm" class="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ffd75ed9-3d93-484d-8637-f103afc93074">
+          <input type="hidden" name="subject" value="Nuova richiesta orientamento — novauni.it">
+          <input type="hidden" name="from_name" value="Sito Nova Uni">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="f-nome">Nome e Cognome *</label>
+              <input id="f-nome" class="form__input" type="text" name="nome" required placeholder="Mario Rossi">
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="f-tel">Telefono</label>
+              <input id="f-tel" class="form__input" type="tel" name="telefono" placeholder="+39 333 000 0000">
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="f-email">Email *</label>
+            <input id="f-email" class="form__input" type="email" name="email" required placeholder="mario@email.com">
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="f-area">Area di interesse</label>
+            <select id="f-area" class="form__input" name="area_interesse">
+              <option value="">Seleziona un'area...</option>
+              <option>Giurisprudenza</option>
+              <option>Economia e Management</option>
+              <option>Psicologia</option>
+              <option>Scienze Motorie</option>
+              <option>Ingegneria</option>
+              <option>Scienze dell'Educazione</option>
+              <option>Non ho ancora deciso</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="f-msg">Messaggio</label>
+            <textarea id="f-msg" class="form__input form__textarea" name="messaggio" placeholder="Raccontaci brevemente la tua situazione..."></textarea>
+          </div>
+
+          <button type="submit" class="form__submit btn btn--gold btn--lg" id="formSubmit">
+            <span class="form__submit-label">Prenota consulenza gratuita →</span>
+            <span class="form__submit-spinner" hidden>Invio in corso...</span>
+          </button>
+
+          <p class="form__legal">Inviando il form, accetti il trattamento dei tuoi dati personali ai sensi del GDPR per finalità di orientamento universitario.</p>
+        </form>
+
+        <div class="form__success" id="formSuccess" hidden>
+          <div class="form__success-icon">✓</div>
+          <h3 class="form__success-title">Richiesta inviata!</h3>
+          <p class="form__success-text">Ti contatteremo entro 48 ore lavorative per fissare la tua consulenza gratuita.</p>
+        </div>
+
+        <div class="form__error" id="formError" hidden>
+          <p>Si è verificato un problema nell'invio. Riprova oppure scrivici a <a href="mailto:info@novauni.it">info@novauni.it</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__brand-row">
+          <img src="assets/logo-novauni.jpg" alt="" class="footer__logo">
+          <div>
+            <div class="footer__brand-title">NOVA UNI</div>
+            <div class="footer__brand-sub">POLO UNIVERSITARIO</div>
+          </div>
+        </div>
+        <p class="footer__tagline">Polo di orientamento universitario del Gruppo Multiversity. Ti guidiamo verso la laurea giusta, gratuitamente.</p>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-title">Atenei</div>
+        <a href="#" class="footer__link">Università Pegaso</a>
+        <a href="#" class="footer__link">Università Mercatorum</a>
+        <a href="#" class="footer__link">Università San Raffaele</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-title">Servizi</div>
+        <a href="#come-funziona" class="footer__link">Orientamento gratuito</a>
+        <a href="corsi.html" class="footer__link">Corsi di laurea</a>
+        <a href="certificazioni.html" class="footer__link">Certificazioni ed Esoneri</a>
+        <a href="#come-funziona" class="footer__link">Tutor dedicato</a>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-title">Legale</div>
+        <a href="privacy.html" class="footer__link">Privacy policy</a>
+        <a href="cookie.html" class="footer__link">Cookie policy</a>
+        <a href="#" class="footer__link" data-cc-open>Preferenze cookie</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Nova Uni — Polo Universitario. Tutti i diritti riservati. P.IVA 18219621002</p>
+      <p>Parte del Gruppo Multiversity</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner__inner">
+    <div class="cookie-banner__icon" aria-hidden="true">🍪</div>
+    <div class="cookie-banner__content">
+      <h3>Rispettiamo la tua privacy</h3>
+      <p>Usiamo cookie tecnici (necessari) e cookie analitici (Google Analytics) per capire come viene usato il sito. Nessun cookie di marketing o profilazione. Puoi accettare o rifiutare gli analitici — il sito funziona uguale. <a href="cookie.html">Cookie policy</a> · <a href="privacy.html">Privacy policy</a></p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--gold btn--sm" id="cc-accept" type="button">Accetta tutti</button>
+      <button class="cc-btn-reject" id="cc-reject" type="button">Rifiuta non essenziali</button>
+    </div>
+  </div>
+</div>
+
+<a href="https://wa.me/393793332878" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Scrivici su WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true">
+    <path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.354.682 4.547 1.85 6.395L4 28l6.781-1.78A11.948 11.948 0 0 0 16 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.818c-1.881 0-3.65-.516-5.166-1.41l-.37-.218-4.024 1.054 1.075-3.93-.241-.405A9.819 9.819 0 0 1 6.182 15c0-5.422 4.398-9.818 9.819-9.818 5.422 0 9.819 4.396 9.819 9.818s-4.397 9.818-9.819 9.818zm5.391-7.359c-.296-.148-1.749-.864-2.022-.964-.272-.099-.469-.149-.665.149-.198.296-.762.964-.935 1.163-.173.197-.346.222-.643.074-.296-.148-1.249-.461-2.378-1.467-.879-.784-1.471-1.751-1.643-2.047-.173-.297-.018-.457.13-.605.134-.133.296-.346.444-.519.148-.173.198-.296.297-.494.099-.198.05-.371-.025-.519-.074-.149-.665-1.604-.911-2.198-.241-.578-.487-.499-.665-.508l-.567-.011c-.198 0-.519.074-.79.371-.272.297-1.038 1.014-1.038 2.473 0 1.46 1.062 2.871 1.21 3.07.149.198 2.092 3.196 5.071 4.481 2.225.961 3.085.92 3.638.835.553-.087 1.749-.715 1.997-1.405.247-.69.247-1.282.173-1.405-.074-.124-.272-.198-.568-.346z"/>
+  </svg>
+  <span class="whatsapp-fab__label">Scrivici su WhatsApp</span>
+</a>
+
+<script src="js/cookie-consent.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
