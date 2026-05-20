@@ -1,5 +1,4 @@
-# Nova Uni — Sito istituzionale
-
+# Nova Uni 
 Sito vetrina del **Polo Nova Uni**, centro di orientamento universitario per le università telematiche del Gruppo Multiversity (Pegaso, Mercatorum, San Raffaele).
 
 - **Dominio**: [novauni.it](https://novauni.it)
