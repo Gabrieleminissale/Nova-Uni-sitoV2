@@ -88,6 +88,7 @@
       </div>
 
       <a href="certificazioni.html" class="navbar__link">Certificazioni</a>
+      <a href="https://ai.novauni.it" target="_blank" rel="noopener" class="navbar__link">Tutor AI</a>
       <a href="index.html#come-funziona" class="navbar__link">Orientamento</a>
       <a href="index.html#contatti" class="navbar__link">Contatti</a>
       <a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener" class="btn btn--gold btn--sm">Consulenza gratuita</a>
@@ -385,6 +386,86 @@
           <p>Si è verificato un problema nell'invio. Riprova oppure scrivici a <a href="mailto:info@novauni.it">info@novauni.it</a>.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Sezione Tutor AI ===== -->
+<style>
+  .ai-tutor { padding: 6rem 0; background: var(--white); }
+  .ai-tutor__box {
+    background: var(--navy-dark);
+    border-radius: 28px;
+    padding: 4rem 3rem;
+    text-align: center;
+    color: #fff;
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .ai-tutor__box::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(600px 300px at 85% 0%, rgba(240,165,0,0.18), transparent 60%),
+      radial-gradient(500px 300px at 0% 100%, rgba(38,63,114,0.6), transparent 60%);
+    pointer-events: none;
+  }
+  .ai-tutor__box > * { position: relative; z-index: 1; }
+  .ai-tutor__box .section__eyebrow { color: var(--gold); }
+  .ai-tutor__title {
+    font-size: clamp(1.9rem, 4vw, 2.7rem);
+    line-height: 1.1;
+    margin: 0.6rem 0 1.1rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .ai-tutor__title em { color: var(--gold); font-style: italic; }
+  .ai-tutor__lead {
+    color: rgba(255,255,255,0.82);
+    max-width: 620px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+    font-size: 1.02rem;
+  }
+  .ai-tutor__features {
+    display: flex; gap: 1.2rem 2.2rem;
+    justify-content: center; flex-wrap: wrap;
+    margin-bottom: 2.4rem;
+  }
+  .ai-tutor__feature {
+    color: rgba(255,255,255,0.92);
+    font-size: 0.92rem;
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .ai-tutor__feature span { color: var(--gold); font-weight: 700; }
+  .ai-tutor__note { margin-top: 1.3rem; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+  @media (max-width: 600px) {
+    .ai-tutor { padding: 4rem 0; }
+    .ai-tutor__box { padding: 2.6rem 1.5rem; }
+  }
+</style>
+<section class="ai-tutor" id="tutor-ai">
+  <div class="container">
+    <div class="ai-tutor__box">
+      <div class="section__eyebrow">NOVA UNI AI</div>
+      <h2 class="ai-tutor__title">Un tutor universitario, <em>24 ore su 24.</em></h2>
+      <p class="ai-tutor__lead">
+        Iscrivendoti con Nova Uni hai accesso al nostro assistente AI: risponde alle tue domande
+        su esami, tasse, tesi e burocrazia basandosi sui regolamenti ufficiali di Pegaso,
+        Mercatorum e San Raffaele. Sempre disponibile, in linguaggio naturale, con risposta in pochi secondi.
+      </p>
+      <div class="ai-tutor__features">
+        <div class="ai-tutor__feature"><span>✓</span> Basato sui regolamenti ufficiali</div>
+        <div class="ai-tutor__feature"><span>✓</span> Attivo 24 ore su 24</div>
+        <div class="ai-tutor__feature"><span>✓</span> Risposte in pochi secondi</div>
+      </div>
+      <a href="https://ai.novauni.it" target="_blank" rel="noopener" class="btn btn--gold btn--lg">
+        Accedi al tutor
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="ai-tutor__note">Servizio riservato agli studenti iscritti con Nova Uni.</p>
     </div>
   </div>
 </section>
