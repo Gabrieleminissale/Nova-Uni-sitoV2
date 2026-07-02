@@ -23,3 +23,4 @@ novauni-sito/
 ```
 
 ---
+<!-- deploy 2 lug 2026 -->
