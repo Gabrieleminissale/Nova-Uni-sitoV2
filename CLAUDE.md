@@ -6,7 +6,7 @@ Questo file dà a Claude Code tutto il contesto necessario per lavorare su quest
 
 - **Gabriele Minissale** — gestisce il Polo Nova Uni. Ha un master in AI, quindi comprende concetti tecnici e di programmazione, ma ha **esperienza limitata di sviluppo web** (HTML/CSS/JS, deploy, DNS). Rispondere **sempre in italiano**.
 - **Come comunicare**: per scelte tecniche aperte, presentare 2-3 opzioni con tradeoff **concreti** (numeri, scenari pratici, costi reali), poi dare una raccomandazione. Non essere astratto. Guidare step-by-step nelle operazioni su sistemi esterni (GitHub, DNS, dashboard).
-- La titolare legale dell'attività è **Laura Baldari (Ditta Individuale)**, P.IVA 18219621002, sede operativa Via Barnaba Oriani 1, Milano.
+- La titolare legale dell'attività è **Laura Baldari (Ditta Individuale)**, P.IVA 18219621002, sede operativa Via XXV Aprile 41/D, Bresso (MI). Orari di apertura: lunedì–venerdì, 9:00–18:00.
 
 ## Cos'è il progetto
 
