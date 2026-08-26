@@ -66,7 +66,7 @@ Queste sono scelte deliberate, non dimenticanze:
 - **Certificazione Inglese**: NON è riconosciuta MUR e NON vale per concorsi/GPS — vale **solo per l'esonero** dell'esame di Inglese in Pegaso e Mercatorum (non San Raffaele). Erogata da AG Formazione. Il test è a risposta multipla, senza webcam, tentativi illimitati, nessun voto.
 - **EIPASS**: esonera l'esame di Informatica (non "tutti i CDL", genericamente). Riconosciuta dai 3 atenei + vale per GPS/concorsi. EIPASS HA la webcam (a differenza dell'inglese).
 - **Esami in presenza**: NON si spiegano sul sito, si spiegano in call. Niente FAQ su questo.
-- **Prezzo corsi**: "a partire da €116/mese" (aggiornato lug 2026), indicato nelle 51 card di corsi.html. Varia con le promo, l'utente lo aggiorna a mano — la stringa da sostituire in blocco è `<strong>€116<small>/mese</small></strong>`.
+- **Prezzo corsi**: "a partire da €129/mese" (aggiornato ago 2026 su indicazione dell'università, calcolato sulla retta annuale agevolata di €1.550), indicato nelle 51 card di corsi.html. Varia con le promo, l'utente lo aggiorna a mano — la stringa da sostituire in blocco è `<strong>€129<small>/mese</small></strong>`.
 - **Conteggio offerta**: il dato "+200 corsi di laurea" in homepage è corretto perché considera anche Master e percorsi ALFO. `corsi.html` mostra deliberatamente solo 51 corsi di laurea per mantenere il catalogo consultabile.
 - **Chi siamo / pagina team**: scartata deliberatamente (attività di 2 persone).
 - **Pagina Atenei separata**: scartata (ridondante con la sezione in home).

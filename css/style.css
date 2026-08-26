@@ -263,6 +263,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 0.45rem 0.875rem;
   display: flex;
   align-items: center;
+  min-height: 54px;
+  box-sizing: border-box;
 }
 .hero__partner-card img { object-fit: contain; }
 
@@ -1251,6 +1253,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: auto;
   object-fit: contain;
 }
+.course-card__ateneo--mercatorum img { height: 32px; }
 .course-card__ateneo--pegaso { border-top: 3px solid #c0143c; }
 .course-card__ateneo--mercatorum { border-top: 3px solid var(--navy); }
 .course-card__ateneo--sanraffaele { border-top: 3px solid #2a5298; }
