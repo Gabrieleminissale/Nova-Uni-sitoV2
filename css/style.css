@@ -267,6 +267,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-sizing: border-box;
 }
 .hero__partner-card img { object-fit: contain; }
+.hero__partner-card .university-logo {
+  width: 108px;
+  height: 40px;
+}
 
 .hero__cta-row {
   display: flex;
@@ -381,7 +385,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 1.5rem;
 }
 .ateneo-card__logo img {
-  max-height: 56px;
+  width: 200px;
+  height: 56px;
   max-width: 100%;
   object-fit: contain;
 }
@@ -564,6 +569,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-wrap: wrap;
 }
 .partners__item img { object-fit: contain; }
+.partners__item .university-logo {
+  width: 180px;
+  height: 60px;
+}
 
 /* ==========================================================================
    Contact
@@ -1249,11 +1258,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .course-card__ateneo img {
-  height: 22px;
-  width: auto;
+  width: 104px;
+  height: 32px;
   object-fit: contain;
 }
-.course-card__ateneo--mercatorum img { height: 32px; }
 .course-card__ateneo--pegaso { border-top: 3px solid #c0143c; }
 .course-card__ateneo--mercatorum { border-top: 3px solid var(--navy); }
 .course-card__ateneo--sanraffaele { border-top: 3px solid #2a5298; }
