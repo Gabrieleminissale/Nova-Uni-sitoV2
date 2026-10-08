@@ -88,7 +88,7 @@
       </div>
 
       <a href="certificazioni.html" class="navbar__link">Certificazioni</a>
-      <a href="https://ai.novauni.it" target="_blank" rel="noopener" class="navbar__link">Tutor AI</a>
+      <a href="collaborazioni.html" class="navbar__link">Collaborazioni</a>
       <a href="index.html#come-funziona" class="navbar__link">Orientamento</a>
       <a href="index.html#contatti" class="navbar__link">Contatti</a>
       <a href="https://calendly.com/novauni-formazione/30min" target="_blank" rel="noopener" class="btn btn--gold btn--sm">Consulenza gratuita</a>
@@ -299,7 +299,7 @@
             <div class="contact__icon">📍</div>
             <div>
               <div class="contact__item-label">Sede operativa</div>
-              <div class="contact__item-val"><m="https://www.google.com/maps/search/?api=1&amp;query=Via+XXV+Aprile+41%2FD%2C+Bresso+MI" target="_blank" rel="noopener">Via XXV Aprile 41/D, Bresso (MI)</a></div>
+              <div class="contact__item-val"><a href="https://www.google.com/maps/search/?api=1&amp;query=Via+XXV+Aprile+41%2FD%2C+Bresso+MI" target="_blank" rel="noopener">Via XXV Aprile 41/D, Bresso (MI)</a></div>
             </div>
           </div>
           <div class="contact__item">
@@ -313,7 +313,7 @@
             <div class="contact__icon">📞</div>
             <div>
               <div class="contact__item-label">Telefono</div>
-              <div class="contact__item-val">+39 379 333 2878</div>
+              <div class="contact__item-val"><a href="tel:+393793332878">+39 379 333 2878</a></div>
             </div>
           </div>
           <div class="contact__item">
@@ -334,26 +334,27 @@
       </div>
 
       <div class="contact__form-wrap">
-        <form id="contactForm" class="form" action="https://api.web3forms.com/submit" method="POST">
+        <form id="contactForm" class="form" data-contact-form data-success="formSuccess" data-error="formError" action="https://api.web3forms.com/submit" method="POST" aria-describedby="studentPrivacyNote">
           <input type="hidden" name="access_key" value="ffd75ed9-3d93-484d-8637-f103afc93074">
           <input type="hidden" name="subject" value="Nuova richiesta orientamento — novauni.it">
           <input type="hidden" name="from_name" value="Sito Nova Uni">
+          <input type="hidden" name="informativa_versione" value="2026-10-08 / 1.1">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
           <div class="form__row">
             <div class="form__field">
               <label class="form__label" for="f-nome">Nome e Cognome *</label>
-              <input id="f-nome" class="form__input" type="text" name="nome" required placeholder="Mario Rossi">
+              <input id="f-nome" class="form__input" type="text" name="nome" autocomplete="name" required placeholder="Mario Rossi">
             </div>
             <div class="form__field">
               <label class="form__label" for="f-tel">Telefono</label>
-              <input id="f-tel" class="form__input" type="tel" name="telefono" placeholder="+39 333 000 0000">
+              <input id="f-tel" class="form__input" type="tel" name="telefono" autocomplete="tel" placeholder="+39 333 000 0000">
             </div>
           </div>
 
           <div class="form__field">
             <label class="form__label" for="f-email">Email *</label>
-            <input id="f-email" class="form__input" type="email" name="email" required placeholder="mario@email.com">
+            <input id="f-email" class="form__input" type="email" name="email" autocomplete="email" required placeholder="mario@email.com">
           </div>
 
           <div class="form__field">
@@ -375,105 +376,41 @@
             <textarea id="f-msg" class="form__input form__textarea" name="messaggio" placeholder="Raccontaci brevemente la tua situazione..."></textarea>
           </div>
 
+          <p class="form__legal" id="studentPrivacyNote">Nova Uni utilizza i tuoi dati per rispondere alla richiesta e ricontattarti per l'orientamento. I campi con * sono necessari; gli altri sono facoltativi. Non inserire documenti o dati sanitari. Nessuna iscrizione a newsletter o messaggi promozionali.</p>
+          <label class="form__privacy" for="f-privacy">
+            <input id="f-privacy" type="checkbox" name="presa_visione_privacy" value="Ho letto l'informativa privacy" required>
+            <span>Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa privacy</a>. *</span>
+          </label>
+
           <button type="submit" class="form__submit btn btn--gold btn--lg" id="formSubmit">
             <span class="form__submit-label">Richiedi consulenza gratuita →</span>
             <span class="form__submit-spinner" hidden>Invio in corso...</span>
           </button>
 
-          <p class="form__legal">Inviando il form, accetti il trattamento dei tuoi dati personali ai sensi del GDPR per finalità di orientamento universitario.</p>
         </form>
 
-        <div class="form__success" id="formSuccess" hidden>
+        <div class="form__success" id="formSuccess" role="status" tabindex="-1" hidden>
           <div class="form__success-icon">✓</div>
           <h3 class="form__success-title">Richiesta inviata!</h3>
           <p class="form__success-text">Ti contatteremo entro 48 ore lavorative per fissare la tua consulenza gratuita.</p>
         </div>
 
-        <div class="form__error" id="formError" hidden>
-          <p>Si è verificato un problema nell'invio. Riprova oppure scrivici a <a href="mailto:info@novauni.it">info@novauni.it</a>.</p>
+        <div class="form__error" id="formError" role="alert" tabindex="-1" hidden>
+          <p>Non abbiamo potuto confermare l'invio. Riprova oppure scrivici a <a href="mailto:info@novauni.it">info@novauni.it</a>.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Sezione Tutor AI ===== -->
-<style>
-  .ai-tutor { padding: 6rem 0; background: var(--white); }
-  .ai-tutor__box {
-    background: var(--navy-dark);
-    border-radius: 28px;
-    padding: 4rem 3rem;
-    text-align: center;
-    color: #fff;
-    max-width: 880px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
-  .ai-tutor__box::before {
-    content: "";
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(600px 300px at 85% 0%, rgba(240,165,0,0.18), transparent 60%),
-      radial-gradient(500px 300px at 0% 100%, rgba(38,63,114,0.6), transparent 60%);
-    pointer-events: none;
-  }
-  .ai-tutor__box > * { position: relative; z-index: 1; }
-  .ai-tutor__box .section__eyebrow { color: var(--gold); }
-  .ai-tutor__title {
-    font-size: clamp(1.9rem, 4vw, 2.7rem);
-    line-height: 1.1;
-    margin: 0.6rem 0 1.1rem;
-    color: #fff;
-    font-weight: 600;
-  }
-  .ai-tutor__title em { color: var(--gold); font-style: italic; }
-  .ai-tutor__lead {
-    color: rgba(255,255,255,0.82);
-    max-width: 620px;
-    margin: 0 auto 2rem;
-    line-height: 1.7;
-    font-size: 1.02rem;
-  }
-  .ai-tutor__features {
-    display: flex; gap: 1.2rem 2.2rem;
-    justify-content: center; flex-wrap: wrap;
-    margin-bottom: 2.4rem;
-  }
-  .ai-tutor__feature {
-    color: rgba(255,255,255,0.92);
-    font-size: 0.92rem;
-    display: inline-flex; align-items: center; gap: 0.5rem;
-  }
-  .ai-tutor__feature span { color: var(--gold); font-weight: 700; }
-  .ai-tutor__note { margin-top: 1.3rem; font-size: 0.8rem; color: rgba(255,255,255,0.5); }
-  @media (max-width: 600px) {
-    .ai-tutor { padding: 4rem 0; }
-    .ai-tutor__box { padding: 2.6rem 1.5rem; }
-  }
-</style>
-<section class="ai-tutor" id="tutor-ai">
-  <div class="container">
-    <div class="ai-tutor__box">
-      <div class="section__eyebrow">NOVA UNI AI</div>
-      <h2 class="ai-tutor__title">Un tutor universitario, <em>24 ore su 24.</em></h2>
-      <p class="ai-tutor__lead">
-        Iscrivendoti con Nova Uni hai accesso al nostro assistente AI: risponde alle tue domande
-        su esami, tasse, tesi e burocrazia basandosi sui regolamenti ufficiali di Pegaso,
-        Mercatorum e San Raffaele. Sempre disponibile, in linguaggio naturale, con risposta in pochi secondi.
-      </p>
-      <div class="ai-tutor__features">
-        <div class="ai-tutor__feature"><span>✓</span> Basato sui regolamenti ufficiali</div>
-        <div class="ai-tutor__feature"><span>✓</span> Attivo 24 ore su 24</div>
-        <div class="ai-tutor__feature"><span>✓</span> Risposte in pochi secondi</div>
-      </div>
-      <a href="https://ai.novauni.it" target="_blank" rel="noopener" class="btn btn--gold btn--lg">
-        Accedi al tutor
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <p class="ai-tutor__note">Servizio riservato agli studenti iscritti con Nova Uni.</p>
+<section class="collaborations collaborations--teaser" id="collaborazioni" aria-labelledby="collaborationsTitle">
+  <div class="container collaborations__teaser">
+    <div>
+      <div class="section__eyebrow">COLLABORAZIONI</div>
+      <h2 class="collaborations__title" id="collaborationsTitle">Collabora con Nova Uni</h2>
+      <p class="collaborations__lead">Aziende, associazioni, professionisti e attività locali: creiamo insieme iniziative di orientamento e nuove partnership.</p>
     </div>
+    <a href="collaborazioni.html" class="btn btn--navy">Scopri le collaborazioni</a>
   </div>
 </section>
 
@@ -504,6 +441,7 @@
         <a href="corsi.html" class="footer__link">Corsi di laurea</a>
         <a href="certificazioni.html" class="footer__link">Certificazioni ed Esoneri</a>
         <a href="#come-funziona" class="footer__link">Tutor dedicato</a>
+        <a href="collaborazioni.html" class="footer__link">Collaborazioni</a>
       </div>
 
       <div class="footer__col">
@@ -544,5 +482,6 @@
 
 <script src="js/cookie-consent.js"></script>
 <script src="js/main.js"></script>
+<script src="js/contact-forms.js"></script>
 </body>
 </html>

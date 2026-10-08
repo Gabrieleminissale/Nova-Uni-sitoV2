@@ -1,8 +1,4 @@
-/* ==========================================================================
-   Nova Uni — certificazioni.js
-   Navbar (scroll/hamburger/dropdown) + form contatti + pre-fill da URL
-   ========================================================================== */
-
+/* Navigazione delle pagine interne. */
 (() => {
   'use strict';
 
@@ -19,6 +15,7 @@
       a.addEventListener('click', () => {
         menu.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Apri menu');
       });
     });
   }
@@ -42,23 +39,6 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeDropdown();
     });
-  }
-
-  /* ── Pre-fill form: ?cert=inglese | ?cert=eipass ─────────────────────── */
-  const params = new URLSearchParams(window.location.search);
-  const certParam = (params.get('cert') || '').toLowerCase();
-  const certSelect = document.getElementById('cf-cert');
-  if (certSelect && certParam) {
-    const map = { inglese: 'Inglese B2', eipass: 'EIPASS', entrambe: 'Entrambe' };
-    const target = map[certParam];
-    if (target) {
-      for (const opt of certSelect.options) {
-        if (opt.value === target || opt.text === target) {
-          certSelect.value = opt.value;
-          break;
-        }
-      }
-    }
   }
 
 })();

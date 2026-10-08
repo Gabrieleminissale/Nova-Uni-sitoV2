@@ -134,45 +134,4 @@
     }
   }
 
-  /* ── Form contatti: invio via Web3Forms ───────────────────────────────── */
-  const form = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('formSubmit');
-  const submitLabel = form.querySelector('.form__submit-label');
-  const submitSpinner = form.querySelector('.form__submit-spinner');
-  const successBox = document.getElementById('formSuccess');
-  const errorBox = document.getElementById('formError');
-
-  const setLoading = (loading) => {
-    submitBtn.disabled = loading;
-    submitLabel.hidden = loading;
-    submitSpinner.hidden = !loading;
-  };
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    errorBox.hidden = true;
-    setLoading(true);
-
-    const data = new FormData(form);
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: data
-      });
-      const json = await res.json();
-
-      if (json.success) {
-        form.hidden = true;
-        successBox.hidden = false;
-        successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        throw new Error(json.message || 'Invio fallito');
-      }
-    } catch (err) {
-      console.error('Errore invio form:', err);
-      errorBox.hidden = false;
-      setLoading(false);
-    }
-  });
 })();
